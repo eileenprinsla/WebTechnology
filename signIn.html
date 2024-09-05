@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        h1{
+            color:blueviolet
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: wheat;
+        }
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: left;
+        }
+        .remember-me input {
+            margin-right: 5px;
+        }
+        .forgot-password a {
+            color: wheat;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body font-family="Arial, sans-serif">
+    <div class="login-container">
+        <h1>Sign-in to Your Account</h1>
+        <form id="login-form">
+            <input type="text" placeholder="Email Id" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <div class="remember-me">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember" style="color: white;">Remember me</label>
+            </div>
+            <pr>
+                <br>
+            </pr>
+            <input type="submit" background-color="wheat" value="Sign In">
+        </form>
+        <br/>
+        <div class="forgot-password" margin-top="10px">
+            <a href="#">Forgot your password?</a>
+        </div>
+    </div>
+</body>
+</html>

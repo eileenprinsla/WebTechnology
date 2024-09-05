@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        h1{
+            color:blueviolet
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body font-family="Arial, sans-serif">
+    <div class="login-container">
+        <h1>Sign-up to Your Account</h1>
+        <form id="login-form">
+            <input type="text" placeholder="Firstname" name="firstname" required>
+            <input type="text" placeholder="Lastname" name="lastname" required>
+            <input type="text" placeholder="Age" name="age" required>
+            <input type="text" placeholder="Email Id" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="password" placeholder="Confirm Password" name="confirm password" required>
+            <div class="remember-me">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember" style="color: white;">Remember me</label>
+            </div>
+            <pr>
+                <br>
+            </pr>
+            <input type="submit" background-color="wheat" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>
