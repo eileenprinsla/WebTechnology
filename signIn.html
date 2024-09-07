@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     <link href="styles.css" rel="stylesheet">
     <style>
         h1{
@@ -28,9 +29,6 @@
             border-radius: 4px;
             cursor: pointer;
         }
-        input[type="submit"]:hover {
-            background-color: wheat;
-        }
         .remember-me {
             display: flex;
             align-items: center;
@@ -41,20 +39,21 @@
             margin-right: 5px;
         }
         .forgot-password a {
-            color: wheat;
+            color:  #222121;
             text-decoration: none;
         }
     </style>
 </head>
 <body font-family="Arial, sans-serif">
     <div class="login-container">
+        <i class="bi bi-box-arrow-in-right"></i> 
         <h1>Sign-in to Your Account</h1>
         <form id="login-form">
             <input type="text" placeholder="Email Id" name="email" required>
             <input type="password" placeholder="Password" name="password" required>
             <div class="remember-me">
                 <input type="checkbox" name="remember" id="remember">
-                <label for="remember" style="color: white;">Remember me</label>
+                <label for="remember" style="color: wheat;">Remember me</label>
             </div>
             <pr>
                 <br>

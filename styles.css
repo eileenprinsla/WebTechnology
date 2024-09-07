@@ -1,5 +1,5 @@
 body {
-    background-color: wheat;
+    background-color:  #222121;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,16 @@ h1 {
     background-color: black;
     padding: 40px 60px;
     width: 300px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: wheat;
+    box-shadow: 4px 4px 50px blueviolet;
     text-align: center;
+}
+.login-container i{
+    color: wheat;
+    font-size: 50px;
+}
+input[type="submit"]:hover {
+    background-color:  #555454;
 }
