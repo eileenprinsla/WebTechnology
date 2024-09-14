@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <style>
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #222121;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            max-width: 900px;
+            margin: 10px;
+            margin-left: 300px;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 9px 30px 0px blueviolet;
+    
+        }
+        fieldset {
+            border: 2px;
+            border-radius: 5px;
+            margin-bottom: 50px;
+        }
+        legend {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: wheat;
+        }
+        label {
+            font-size: 1em;
+            margin-bottom: 10px;
+            display:block;
+            color:azure;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid burlywood;
+            border-radius: 5px;
+        }
+        .reset {
+            background-color: #a72828;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .reset:hover {
+            background-color: #882121a9;
+        }
+        .set {
+            background-color: #1e8124;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .set:hover {
+            background-color: #218826a6;
+        }
+        .instruction {
+            font-size: 0.9em;
+            color:azure
+        }
+        h1, h3{
+            color: wheat;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        i{
+            color:#a72828;
+            font-size: xx-large;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <i class="bi bi-clipboard-data"></i><br/>
+        <h1>APPLICATION FORM </h1><br/>
+        <h3>Join Our Team: Apply for an Inventory Role Today</h3><br/>
+    </div>
+    
+    <div class="form-container">
+        <form action="applysuccess.html">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="FName">First Name</label>
+                <input type="text" id="FName" name="first_name" placeholder="Enter your first name" required/>
+
+                <label for="LName">Last Name</label>
+                <input type="text" id="LName" name="last_name" placeholder="Enter your last name" required/>
+
+                <label for="DoB">Date of Birth</label>
+                <input type="date" id="DoB" name="dob" max="31-12-2004" min="31-12-1990" required/>
+
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required/>
+
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact_number" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your 10-digit contact number" required/>
+                <span class="instruction">Please enter only numbers. No spaces or symbols.</span>
+            </fieldset>
+
+            <input class="reset" type="submit" value="Reset"/>          
+            <input class="set" type="submit" value="Submit"/>
+        </form>
+    </div>
+</body>
+</html>
