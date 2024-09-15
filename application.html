@@ -79,12 +79,22 @@
         h1, h3{
             color: wheat;
             font-family: 'Courier New', Courier, monospace;
+            animation: slideRight 1s ease-out;
         }
         i{
             color:#a72828;
             font-size: xx-large;
             text-align: center;
         }
+        @keyframes slideRight {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
     </style>
 </head>
 <body>
