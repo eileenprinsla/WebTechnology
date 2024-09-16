@@ -94,8 +94,8 @@
                 transform: translateX(0);
             }
         }
-
     </style>
+    
 </head>
 <body>
     <div>
@@ -105,7 +105,7 @@
     </div>
     
     <div class="form-container">
-        <form action="applysuccess.html">
+        <form action="applysuccess.html" onsubmit="return validateDOB()">
 
             <fieldset>
                 <legend>Personal Information</legend>
@@ -117,9 +117,7 @@
                 <input type="text" id="LName" name="last_name" placeholder="Enter your last name" required/>
 
                 <label for="DoB">Date of Birth</label>
-                <input type="date" id="DoB" name="dob" max="31-12-2004" min="31-12-1990" required/>
-
-            
+                <input type="date" id="DoB" name="dob"   required/>
             </fieldset>
 
             <fieldset>
@@ -133,9 +131,25 @@
                 <span class="instruction">Please enter only numbers. No spaces or symbols.</span>
             </fieldset>
 
-            <input class="reset" type="submit" value="Reset"/>          
+            <input class="reset" type="reset" value="Reset"/>          
             <input class="set" type="submit" value="Submit"/>
         </form>
     </div>
+    <script>
+        function validateDOB() {
+            var dobInput = document.getElementById("DoB").value;
+            var dob = new Date(dobInput);
+            var today = new Date();
+            var age = today.getFullYear() - dob.getFullYear();
+
+            if (age >= 18) {
+                return true;
+            } else {
+                alert("You must be at least 18 years old. Your age is " + age + ".");
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>
+
