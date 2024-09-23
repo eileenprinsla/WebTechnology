@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Successful message</title>
+    <title>Application Successful Message</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
     <style>
         body {
@@ -11,15 +11,20 @@
             background-color: #222121; 
             justify-content: center;
             align-items: center;
+            background-image: url("inv_job.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode:luminosity;
         }
         .box {
             max-width: 1200px;
             margin: 10px;
-            margin-top: 150px;
-            margin-left: 300px;
+            margin-top: 200px;
+            margin-left: 200px;
             padding: 30px;
             border-radius: 30px;
-            box-shadow: 9px 30px 0px blueviolet;
+            box-shadow: 9px 9px 20px 20px blueviolet;
         }
         fieldset {
             border: 2px;
@@ -40,23 +45,40 @@
             background-color: #218826a6;
         }
         h1, p{
-            color: whitesmoke;
+            color: wheat;
             font-family: 'Courier New', Courier, monospace;
+        }
+        h1{
+            animation: slideRight 1s ease-out;
+            text-shadow: 10px 10px 10px black;
+            font-size: 3rem;
         }
         h3{
             color: #1e8124;
             font-family: 'Courier New', Courier, monospace;
+            text-shadow: 10px 10px 10px black;
+            font-size: 2rem;
         }
         i{
             color: #1e8124;
             font-size: 5rem;
             text-align: center;
+            text-shadow: 10px 10px 10px black;
         }
         input[type=submit]{
             text-align: center;
             width: 35%;
             margin-left: 400px;
             margin-bottom: 90px;
+            box-shadow: 10px 0px 10px black;
+        }
+        @keyframes slideRight {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
         }
     </style>
 </head>
